@@ -1,0 +1,256 @@
+/*!
+ * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+ *{padding: 0;margin: 0;box-sizing: border-box;}
+body {
+  font-family: "Open Sans", serif;
+  padding-top: 54px;
+  color: #868e96;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", serif;
+  font-size: 1.35rem;
+}
+.list-social-icons a {
+  color: #4C528E;
+}
+.list-social-icons a:hover {
+  color: #383c70;
+  color: #bd5d38;
+}
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+  transition-property: all;
+  transition-duration: 700ms;
+  transition-timing-function: ease-in-out;
+}
+.list-social-icons a .fa-lg:hover {
+    transform: scale(1.1);
+}
+.list-icons {
+  font-size: 3rem;
+}
+.list-icons .list-inline-item i:hover {
+  color: #bd5d38;
+ 
+
+}
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 3px solid #ffffff
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+.bg-primary {
+  background-color: #4C528E !important;
+}
+.text-primary {
+  color: #4C528E  !important;
+}
+a {
+  color: #4C528E
+}
+a:active,
+a:focus,
+a:hover {
+  color:#4C528E
+}
+/* projects */
+
+#projects{
+  /* background-color: #bd5d38; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+}
+#projects h2{font-size: 2rem;}
+.projects-container{
+  /* background-color: #2a2a2f; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+.projects-card{border: 1px solid gray;}
+@media screen and (min-width:396px) and (max-width:580px) {
+  #projects{  padding-top: 6rem;}
+  .projects-container{grid-template-columns: repeat(2,1fr);}
+}
+@media screen and (max-width:395px) {
+  #projects{width: 430px;  padding-top: 6rem;}
+  .projects-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+/*  */
+
+#about{min-height: 100vh;}
+
+/*  skills container */
+#skills{
+  /* background-color: #868e96; */
+}
+.skills-container{
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 2rem;
+ 
+}
+
+.skills-container .skill-img-cnt{
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+}
+.skill-img-cnt img{}
+.skill-img-cnt p{font-size: 1.3rem;color: black;}
+
+@media screen and (min-width:350px) and (max-width:550px) {
+  .skills-container{
+    grid-template-columns: repeat(3,1fr);
+    
+  }
+}
+@media screen and (max-width:350px) {
+  #skills{width:430px;}
+  .skills-container{
+    /* width: 400px; */
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* education */
+
+#education{
+  /* background-color: brown; */
+  min-height: 100vh;
+  padding-top: 2.3rem;
+  padding-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+#education h2{
+  color:  #1a4774;
+  padding-top: 1rem;
+  /* background-color: aquamarine; */
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+.education-container{
+  /* background-color: #4C528E; */
+  padding: 5px;}
+.education-container .degree-container{
+  /* background-color: #d6d6d6; */
+  /* padding: 5px; */
+  margin: 5px 0;
+ 
+}
+.degree-container .deg-title{font-size: 2.2rem;}
+.degree-container{}
+.degree-container img{
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+}
+.degree-container .uni h2{font-size: 1.8rem;}
+.degree-container .date{font-size: 0.9rem;}
+
+
+.mb-5{font-size: 1.2rem;}
